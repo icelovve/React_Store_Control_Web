@@ -3,13 +3,10 @@ import Login from "./pages/Auth/Login";
 import Forgot from "./pages/Auth/Forgot";
 import CreateAccount from "./pages/Auth/Create_Account";
 import Home from "./pages/backend/Home"
-import Order from "./pages/backend/Order";
 import Admin from "./pages/backend/Admin";
-import Paymay from "./pages/backend/Paymay";
-import Employees from "./pages/backend/Employees";
+import Employees from "./pages/backend/employees/Employees";
 import Product from "./pages/backend/Product";
 import PageError404 from "./pages/backend/PageError404";
-import 'bootstrap-icons/font/bootstrap-icons.css';
 
 function App() {
     return (
@@ -23,9 +20,7 @@ function App() {
 
                 {/* Backend */}
                 <Route path="/home" element={<Home />} />
-                <Route path="/order-management" element={<Order />} />
                 <Route path="/admin-accounts" element={<Admin />} />
-                <Route path="/payment-management" element={<Paymay />} />
                 <Route path="/employees-management" element={<Employees />} />
                 <Route path="/product-management" element={<Product />} />
 
