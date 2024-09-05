@@ -17,20 +17,20 @@ const Navbar = () => {
                     <span className="d-none d-lg-block">Smart Stock</span>
                 </Link>
                 <i className="bi bi-list toggle-sidebar-btn" />
-            </div>{/* End Logo */}
+            </div>
             <div className="search-bar">
                 <form className="search-form d-flex align-items-center" method="POST" action="#">
                     <input type="text" name="query" placeholder="Search" title="Enter search keyword" />
                     <button type="submit" title="Search"><i className="bi bi-search" /></button>
                 </form>
-            </div>{/* End Search Bar */}
+            </div>
             <nav className="header-nav ms-auto">
                 <ul className="d-flex align-items-center">
                     <li className="nav-item d-block d-lg-none">
                         <a className="nav-link nav-icon search-bar-toggle" href="#">
                             <i className="bi bi-search" />
                         </a>
-                    </li>{/* End Search Icon */}
+                    </li>
                     <li className="nav-item dropdown">
                         <a className="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
                             <i className="bi bi-bell" />
@@ -61,12 +61,12 @@ const Navbar = () => {
                                 <a href="#">Show all notifications</a>
                             </li>
                         </ul>{/* End Notification Dropdown Items */}
-                    </li>{/* End Notification Nav */}
+                    </li>
                     <li className="nav-item dropdown">
                         <a className="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
                             <i className="bi bi-chat-left-text" />
                             <span className="badge bg-success badge-number">1</span>
-                        </a>{/* End Messages Icon */}
+                        </a>
                         <ul className="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
                             <li className="dropdown-header">
                                 You have 1 new messages
@@ -75,7 +75,6 @@ const Navbar = () => {
                             <li>
                                 <hr className="dropdown-divider" />
                             </li>
-                            {/* Message Items */}
                             <li className="message-item">
                                 <a href="#">
                                     <img src="assets/img/messages-1.jpg" alt="Maria Hudson" className="rounded-circle" />
@@ -86,20 +85,19 @@ const Navbar = () => {
                                     </div>
                                 </a>
                             </li>
-                            {/* More message items */}
                             <li>
                                 <hr className="dropdown-divider" />
                             </li>
                             <li className="dropdown-footer">
                                 <a href="#">Show all messages</a>
                             </li>
-                        </ul>{/* End Messages Dropdown Items */}
-                    </li>{/* End Messages Nav */}
+                        </ul>
+                    </li>
                     <li className="nav-item dropdown pe-3">
                         <a className="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
                             <img src="assets/img/img_ice.jpg" alt="Profile" className="rounded-circle" />
                             <span className="d-none d-md-block dropdown-toggle ps-2">Admin01</span>
-                        </a>{/* End Profile Image Icon */}
+                        </a>
                         <ul className="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
                             <li className="dropdown-header">
                                 <h6>Admin01</h6>
@@ -141,10 +139,10 @@ const Navbar = () => {
                                     <span>Sign Out</span>
                                 </a>
                             </li>
-                        </ul>{/* End Profile Dropdown Items */}
-                    </li>{/* End Profile Nav */}
+                        </ul>
+                    </li>
                 </ul>
-            </nav>{/* End Icons Navigation */}
+            </nav>
         </header>
     );
 }
