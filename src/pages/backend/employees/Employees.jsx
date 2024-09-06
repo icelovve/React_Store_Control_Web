@@ -4,33 +4,7 @@ import { Link } from "react-router-dom";
 import BackendLayout from "../../../components/layout/BackendLayout";
 import EmployeeList from "./EmployeeList";
 import EmployeeForm from "./EmployeeForm";
-
-const initialEmployees = {
-    1: {
-        id: "1",
-        name: "Luna Doe",
-        position: "Sales Associate",
-        img: "/assets/img/messages-1.jpg",
-        phone: "0911431216",
-        email: "luna@example.com",
-    },
-    2: {
-        id: "2",
-        name: "Jane Smith",
-        position: "Cashier",
-        img: "/assets/img/messages-2.jpg",
-        phone: "0880981234",
-        email: "janesmith@example.com",
-    },
-    3: {
-        id: "3",
-        name: "Michael Johnson",
-        position: "Store Manager",
-        img: "/assets/img/messages-3.jpg",
-        phone: "0954358213",
-        email: "michael@example.com",
-    },
-};
+import initialEmployees from "./initialEmployees";
 
 const Employees = () => {
     const [employees, setEmployees] = useState(initialEmployees);
