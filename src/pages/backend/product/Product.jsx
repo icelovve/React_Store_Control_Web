@@ -1,9 +1,12 @@
 // Product.jsx
-import React, { useState } from 'react';
-import BackendLayout from '../../components/layout/BackendLayout';
+import { useState } from 'react';
+import BackendLayout from '../../../components/layout/BackendLayout';
 import Swal from 'sweetalert2';
 import ProductList from './ProductList';
 import ProductForm from './ProductForm';
+import { Link } from 'react-router-dom';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const initialProduct = {
     1: {
@@ -26,7 +29,7 @@ const initialProduct = {
         id: "3",
         img: "/assets/img/product-3.jpg",
         name: "Serum",
-        description: "This facial serum is designed to hydrate, brighten, and nourish the skin, reducing the appearance of wrinkles and leaving your skin looking radiant and smooth.",
+        description: "This facial serum is designed to hydrate, brighten, and nourish the skin,brighten, and nourish the skin, reducing the appearance of wrinkles and leaving your skin looking radiant and smooth.",
         price: "$500",
         availability: "72"
     },
@@ -167,34 +170,53 @@ const Product = () => {
     };
 
     return (
-        <BackendLayout>
-            <div className="container mt-4">
-                <div className="mb-3">
-                    <button
-                        type="button"
-                        className="btn btn-primary"
-                        data-bs-toggle="modal"
-                        data-bs-target="#addProductModal"
-                        onClick={handleClose}
-                    >
-                        <i className="bi bi-plus-circle"></i> Add Product
-                    </button>
+        <BackendLayout title="Product">
+            <main id="main" className="main">
+                <div className="pagetitle">
+                    <h1 className="my-3">Product Management</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol className="breadcrumb">
+                            <Link
+                                className="breadcrumb-item active small text-decoration-none fw-light"
+                                to="/home"
+                            >
+                                Home
+                            </Link>
+                            <li className="breadcrumb-item small fw-light">
+                                Product Management
+                            </li>
+                        </ol>
+                    </nav>
                 </div>
-                <ProductList
-                    products={product}
-                    onEdit={handleEdit}
-                    onDelete={handleDelete}
-                />
-                <ProductForm
-                    newProduct={newProduct}
-                    imagePreview={imagePreview}
-                    isEditMode={isEditMode}
-                    handleImageChange={handleImageChange}
-                    handleInputChange={handleInputChange}
-                    handleSubmit={handleSubmit}
-                    handleClose={handleClose}
-                />
-            </div>
+                <div className="container mt-4">
+                    <div className="d-flex justify-content-end mb-3">
+                        <button
+                            type="button"
+                            className="btn btn-success"
+                            data-bs-toggle="modal"
+                            data-bs-target="#ProductModal"
+                            onClick={resetForm}
+                        >
+                            <i className="bi bi-plus"></i> Add Product
+                        </button>
+
+                    </div>
+                    <ProductList
+                        products={product}
+                        onEdit={handleEdit}
+                        onDelete={handleDelete}
+                    />
+                    <ProductForm
+                        newProduct={newProduct}
+                        imagePreview={imagePreview}
+                        isEditMode={isEditMode}
+                        handleImageChange={handleImageChange}
+                        handleInputChange={handleInputChange}
+                        handleSubmit={handleSubmit}
+                        handleClose={handleClose}
+                    />
+                </div>
+            </main>
         </BackendLayout>
     );
 };
