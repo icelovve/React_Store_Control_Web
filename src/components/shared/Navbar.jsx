@@ -65,7 +65,7 @@ const Navbar = () => {
                     <li className="nav-item dropdown">
                         <a className="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
                             <i className="bi bi-chat-left-text" />
-                            <span className="badge bg-success badge-number">1</span>
+                            <span className="badge bg-success badge-number">0</span>
                         </a>
                         <ul className="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
                             <li className="dropdown-header">
