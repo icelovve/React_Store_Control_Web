@@ -5,7 +5,7 @@ import ProfileTabs from "./ProfileTabs"
 
 const Admin = () => {
     return (
-        <BackendLayout title="Admin Account">
+        <BackendLayout title="Profile">
             <main id="main" className="main">
                 <Breadcrumb />
                 <section className="section profile">
