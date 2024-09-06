@@ -31,7 +31,7 @@ const SideBar = () => {
                 <li className="nav-item">
                     <Link className="nav-link collapsed" to="/admin-accounts">
                         <i className="bi bi-person-circle" />
-                        <span>Admin Accounts</span>
+                        <span>Profile</span>
                     </Link>
                 </li>
                 <li className="nav-item mt-auto">
