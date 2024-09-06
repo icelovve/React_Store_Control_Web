@@ -96,7 +96,7 @@ const Navbar = () => {
                     <li className="nav-item dropdown pe-3">
                         <a className="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
                             <img src="assets/img/img_ice.jpg" alt="Profile" className="rounded-circle" />
-                            <span className="d-none d-md-block dropdown-toggle ps-2">Admin01</span>
+                            <span className="d-none d-md-block dropdown-toggle ps-2">Kevin Anderson</span>
                         </a>
                         <ul className="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
                             <li className="dropdown-header">

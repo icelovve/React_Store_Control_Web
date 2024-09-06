@@ -26,7 +26,7 @@ function App() {
 
                 {/* Page Error 404 */}
                 <Route path="*" element={<PageError404 />} />
-
+                
             </Routes>
         </BrowserRouter>
     );
