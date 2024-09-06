@@ -4,7 +4,7 @@ import BackendLayout from "../../components/layout/BackendLayout"
 const Home = () => {
     return (
         <BackendLayout title="Home">
-            <main id="main" className="main">
+            <>
                 <div className="pagetitle">
                 <h1 className="my-3">Home</h1>
                     <nav>
@@ -14,7 +14,7 @@ const Home = () => {
                     </nav>
                     <h1 className="text-center">Welcome back</h1>
                 </div>
-            </main>
+            </>
         </BackendLayout>
     )
 }

@@ -83,7 +83,7 @@ const Employees = () => {
 
     return (
         <BackendLayout title="Employee Management">
-            <main id="main" className="main">
+            <>
                 <div className="pagetitle">
                     <h1 className="my-3">Employee Management</h1>
                     <nav aria-label="breadcrumb">
@@ -134,7 +134,7 @@ const Employees = () => {
                         </div>
                     </div>
                 </section>
-            </main>
+            </>
         </BackendLayout>
     );
 };

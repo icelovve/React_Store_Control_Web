@@ -7,7 +7,7 @@ const SideBar = () => {
         navigate('/login');
     }
     return (
-        <aside id="sidebar" className="sidebar">
+        <>
             <ul className="sidebar-nav d-flex flex-column" id="sidebar-nav">
                 <li className="nav-heading">Menu</li>
                 <li className="nav-item">
@@ -41,7 +41,7 @@ const SideBar = () => {
                     </a>
                 </li>
             </ul>
-        </aside>
+        </>
 
     );
 }

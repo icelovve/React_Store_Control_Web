@@ -10,7 +10,7 @@ const Navbar = () => {
     }
 
     return (
-        <header id="header" className="header fixed-top d-flex align-items-center">
+        <>
             <div className="d-flex align-items-center justify-content-between">
                 <Link to="/home" className="logo d-flex align-items-center text-decoration-none">
                     <img src="assets/img/logo.png" alt="Smart Stock Logo" />
@@ -143,7 +143,7 @@ const Navbar = () => {
                     </li>
                 </ul>
             </nav>
-        </header>
+        </>
     );
 }
 

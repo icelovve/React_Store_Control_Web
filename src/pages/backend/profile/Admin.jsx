@@ -6,7 +6,7 @@ import ProfileTabs from "./ProfileTabs"
 const Admin = () => {
     return (
         <BackendLayout title="Profile">
-            <main id="main" className="main">
+            <>
                 <Breadcrumb />
                 <section className="section profile">
                     <div className="row">
@@ -18,7 +18,7 @@ const Admin = () => {
                         </div>
                     </div>
                 </section>
-            </main>
+            </>
         </BackendLayout>
     )
 }

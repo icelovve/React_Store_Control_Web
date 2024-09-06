@@ -129,7 +129,7 @@ const Product = () => {
 
     return (
         <BackendLayout title="Product">
-            <main id="main" className="main">
+            <>
                 <div className="pagetitle">
                     <h1 className="my-3">Product Management</h1>
                     <nav aria-label="breadcrumb">
@@ -174,7 +174,7 @@ const Product = () => {
                         handleClose={handleClose}
                     />
                 </div>
-            </main>
+            </>
         </BackendLayout>
     );
 };

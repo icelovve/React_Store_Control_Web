@@ -8,20 +8,20 @@ const BackendLayout = ({ children, title }) => {
         <>
             <DocumentTitle title={title + " | Smart Stock"} />
             <div className="d-flex flex-column min-vh-100">
-                <header>
+                <header id="header" className="header fixed-top d-flex align-items-center">
                     <Navbar />
                 </header>
                 <div className="d-flex flex-grow-1">
-                    <aside>
+                    <aside id="sidebar" className="sidebar">
                         <SideBar />
                     </aside>
-                    <main className="flex-grow-1">
+                    <main  main id="main" className="main flex-grow-1" >
                         {children}
                     </main>
                 </div>
-                <div>
+                <footer id="footer" className="footer mt-auto py-3 bg-light text-center">
                     <Footer />
-                </div>
+                </footer>
             </div>
         </>
     );
