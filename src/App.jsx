@@ -5,7 +5,7 @@ import CreateAccount from "./pages/Auth/Create_Account";
 import Home from "./pages/backend/Home"
 import Admin from "./pages/backend/Admin";
 import Employees from "./pages/backend/employees/Employees";
-import Product from "./pages/backend/Product";
+import Product from "./pages/backend/product/Product";
 import PageError404 from "./pages/backend/PageError404";
 
 function App() {
