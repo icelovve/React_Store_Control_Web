@@ -9,7 +9,7 @@ const Home = () => {
                 <h1 className="my-3">Home</h1>
                     <nav>
                         <ol className="breadcrumb">      
-                            <a className="small text-decoration-none fw-light">Home</a>
+                            <a className="breadcrumb-item active small text-decoration-none fw-light">Home</a>
                         </ol>
                     </nav>
                     <h1 className="text-center">Welcome back</h1>

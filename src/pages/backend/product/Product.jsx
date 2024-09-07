@@ -1,4 +1,3 @@
-// Product.jsx
 import { useState } from 'react';
 import BackendLayout from '../../../components/layout/BackendLayout';
 import Swal from 'sweetalert2';

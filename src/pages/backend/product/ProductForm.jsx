@@ -1,6 +1,3 @@
-// ProductForm.jsx
-import React from 'react';
-
 const ProductForm = ({
     newProduct,
     imagePreview,
